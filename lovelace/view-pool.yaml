@@ -1,0 +1,42 @@
+
+title: Pool
+icon: 'fas:swimmer'
+path: pool
+
+cards:
+  - type: 'custom:vertical-stack-in-card'
+    cards:
+      - type: 'custom:text-divider-row'
+        text: Temperatures
+      - type: entities
+        show_header_toggle: false
+        entities:
+          - entity: sensor.air_temp
+          - entity: sensor.pool_temp
+          - entity: sensor.spa_temp
+      - type: 'custom:text-divider-row'
+        text: Pool
+      - type: entities
+        show_header_toggle: false
+        entities:
+          - entity: switch.yard_light
+          - entity: switch.pool_heater
+          - entity: switch.swim_jet
+          - entity: switch.pool_pump
+          - entity: switch.pool_light
+      - type: 'custom:text-divider-row'
+        text: Spa
+      - type: entities
+        show_header_toggle: false
+        entities:
+          - entity: switch.spa_pump
+          - entity: switch.spa_jets
+          - entity: switch.spa_heater
+          - entity: switch.spa_light
+  
+  - type: thermostat
+    entity: climate.pool
+  - type: thermostat
+    entity: climate.spa
+
+

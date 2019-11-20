@@ -1,0 +1,12 @@
+cards:
+  - type: thermostat
+    entity: climate.casita
+  - type: thermostat
+    entity: climate.cats_hallway
+  - type: thermostat
+    entity: climate.family_room
+  - type: thermostat
+    entity: climate.master_bedroom
+icon: 'fas:temperature-frigid'
+path: thermostat
+title: Thermostats

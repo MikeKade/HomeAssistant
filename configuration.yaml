@@ -1,0 +1,174 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Kade-Home
+  
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 1827
+  
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/Phoenix
+  
+  # Customization file
+  customize: !include_dir_merge_named components/customizations
+
+# Sensors
+
+sensor: !include sensor.yaml
+
+# Frontend
+
+frontend: !include frontend.yaml
+
+# Put lovelace UI into yaml mode
+
+lovelace:
+  mode: yaml
+  
+# Configure a default setup of Home Assistant (frontend, api, etc)
+
+default_config:
+
+# Enable system health
+
+system_health:
+
+# Discover some devices automatically
+
+discovery:
+ssdp:
+zeroconf:
+
+# Homekit
+
+# homekit:
+#   auto_start: false
+#   filter:
+#     exclude_domains:
+#       - alarm_control_panel
+#       - input_boolean
+#       - binary_sensor
+#       - sensor
+#     include_domains:
+#       - light
+#       - switch
+#       - climate
+      
+# IOS
+
+ios:
+
+# Sony Projector
+
+switch:
+  - platform: sony_projector
+    host: 192.168.102.74
+    name: "Theatre Projector"
+    
+# Denon
+
+media_player:
+  - platform: denonavr
+    host: 192.168.102.81
+    name: "Denon Amp"
+  - platform: braviatv
+    host: 192.168.102.77
+    name: "Office TV"
+  - platform: braviatv
+    host: 192.168.102.73
+    name: "Master Bedroom TV"
+  - platform: braviatv
+    host: 192.168.102.78
+    name: "Family Room TV"
+
+# iAquaLink
+
+iaqualink:
+  username: mike@mikda.com
+  password: Sch1lth0rn
+
+# Garage Doors
+
+cover:
+  - platform: myq
+    username: mike@mikda.com
+    password: Sch1lth0rn
+    type: liftmaster
+
+# Get Allergy Index for Scottsdale
+
+iqvia:
+  zip_code: "85255"
+  monitored_conditions:
+    - allergy_average_forecasted
+    - disease_average_forecasted
+
+# Input Select - Used for determining status of Mike and Debbie
+
+input_select:
+  mike_status_dropdown:
+    name: Mike
+    options:
+      - Home
+      - Just Arrived
+      - Just Left
+      - Away
+      - Extended Away
+    initial: Home
+  debbie_status_dropdown:
+    name: Debbie
+    options:
+      - Home
+      - Just Arrived
+      - Just Left
+      - Away
+      - Extended Away
+    initial: Home
+
+# Nest
+
+nest:
+  client_id: "a6bed780-9fbb-4c63-b7f4-80141a031ec7"
+  client_secret: "ZHFk6Xxp0GMGbXZDsYlXLQtKi"
+
+# Security Panel
+
+elkm1:
+  host: elk://192.168.102.7
+  area:
+    exclude: [3-8]
+  plc:
+    enabled: false
+  thermostat:
+    enabled: false
+  task:
+    enabled: false
+  output:
+    enabled: false
+  keypad:
+    exclude: [3-16]
+  counter:
+    enabled: false
+  setting:
+    enabled: false
+  zone:
+    exclude: [14, 16-17, 25, 36, 40, 46-208]
+
+# Device Tracker
+
+# Log Update
+
+logger:
+  default: info
+  logs:
+    homeassistant.components.denonavr: debug
+    
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml

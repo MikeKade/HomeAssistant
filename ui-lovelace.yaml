@@ -1,0 +1,23 @@
+resources:
+  - url: /local/custom-cards/dark-sky-weather-card.js?v=7.1
+    type: module
+  - url: /local/custom-cards/text-divider-row.js?v=1.0
+    type: module
+  - url: /local/custom-cards/vertical-stack-in-card.js?v=1.0
+    type: js
+  - url: /local/custom-cards/slider-entity-row.js?v=1.0
+    type: module
+  - url: /local/custom-cards/mini-media-player-bundle.js?v=1.4.2
+    type: module
+    
+title: Kade Home
+views:
+  - !include lovelace/view-home.yaml
+  - !include lovelace/view-media.yaml
+  - !include lovelace/view-pool.yaml
+  - !include lovelace/view-cctv.yaml
+  - !include lovelace/view-thermostats.yaml
+  - !include lovelace/view-zwave.yaml
+  - !include lovelace/view-settings.yaml
+  - !include lovelace/view-security.yaml
+  - !include lovelace/view-working.yaml

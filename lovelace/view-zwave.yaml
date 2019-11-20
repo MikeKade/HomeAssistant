@@ -1,0 +1,137 @@
+icon: 'fas:waveform'
+path: zwave
+title: ZWave
+panel: false
+cards:
+  - type: entities
+    title: 'Casita Status'
+    show_header_toggle: false
+    entities:
+      - zwave.casita_sitting_area
+      - zwave.casita_inside_entry_light
+      - zwave.casita_wall_switch
+      - zwave.casita_wetbar
+      - zwave.casita_fan
+      - zwave.casita_fireplace
+  - type: entities
+    title: 'Cats Room Status'
+    show_header_toggle: false
+    entities:
+      - zwave.cats_room_toilet_fan
+      - zwave.cats_room_light
+      - zwave.cats_room_fan
+      - zwave.cats_hallway_light
+      - zwave.cats_toilet_light
+  - type: entities
+    title: 'Dining Room'
+    show_header_toggle: false
+    entities:
+      - zwave.diningroom_light
+      - zwave.butlerpantry_light
+  - type: entities
+    title: 'Entryway'
+    show_header_toggle: false
+    entities:
+      - zwave.halltoilet_light
+      - zwave.halltoilet_fan
+      - zwave.halltoilet_sensor
+      - zwave.entry_light
+  - type: entities
+    title: 'Family Room'
+    show_header_toggle: false
+    entities:
+      - zwave.familyroom_tv_light
+      - zwave.familyroom_sofa_light
+  - type: entities
+    title: 'Kitchen'
+    show_header_toggle: false
+    entities:
+      - zwave.kitchenpantry_light
+      - zwave.breakfastnook_light
+  - type: entities
+    title: 'Laundry Room'
+    show_header_toggle: false
+    entities:
+      - zwave.laundryroom_light
+      - zwave.laundryroom_fan
+      - zwave.laundryroom_controller
+  - type: entities
+    title: 'Living Room'
+    show_header_toggle: false
+    entities:
+      - zwave.livingroom_light
+  - type: entities
+    title: 'Master Bathroom'
+    show_header_toggle: false
+    entities:
+      - zwave.mastertoilet_light
+      - zwave.mastertoilet_fan
+      - zwave.masterbathroom_tub_fan
+      - zwave.masterbathroom_tub_light
+      - zwave.masterbathroom_sink_light
+  - type: entities
+    title: 'Master Bedroom'
+    show_header_toggle: false
+    entities:
+      - zwave.masterrotunda_light
+      - zwave.master_bedroom_fan
+      - zwave.master_bedroom_bed_light
+      - zwave.master_bedroom_picture_light
+      - zwave.mb_quad_switch
+  - type: entities
+    title: 'Master Closet'
+    show_header_toggle: false
+    entities:
+      - zwave.mastercloset_light
+  - type: entities
+    title: 'Mom Bedroom'
+    show_header_toggle: false
+    entities:
+      - zwave.moms_room_fan
+      - zwave.moms_room_light
+      - zwave.moms_toilet_fan
+      - zwave.moms_toilet_light
+      - zwave.moms_sink_light
+      - zwave.mom_tv_fan
+      - zwave.mom_tv_light
+  - type: entities
+    title: 'Office'
+    show_header_toggle: false
+    entities:
+      - zwave.office_light
+      - zwave.office_outlet
+  - type: entities
+    title: 'Outdoors'
+    show_header_toggle: false
+    entities:
+      - zwave.frontdoor_light
+      - zwave.backporch_light
+      - zwave.casita_outside_light
+      - zwave.theatre_outside_light
+  - type: entities
+    title: 'Server Room'
+    show_header_toggle: false
+    entities:
+      - zwave.aeon_labs_zw090_z_stick_gen5_us
+      - zwave.serverroom_light
+      - zwave.office_sensor
+  - type: entities
+    title: 'Theatre Room'
+    show_header_toggle: false
+    entities:
+      - zwave.theatrehall_light
+      - zwave.theatre_room
+      - zwave.theatrehall_sensor
+      - zwave.theatreroom_powerstrip
+  - type: entities
+    title: 'Wetbar'
+    show_header_toggle: false
+    entities:
+      - zwave.wetbar_light
+      - zwave.wetbar_sink
+  - type: entities
+    title: 'Wine Room'
+    show_header_toggle: false
+    entities:
+      - zwave.wineroom_sensor
+      - zwave.wineroom_light

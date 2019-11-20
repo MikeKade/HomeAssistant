@@ -1,0 +1,14 @@
+  light.theatrehall_light:
+    friendly_name: Theatre Hallway Light
+    icon: fas:popcorn
+  light.theatre_room:
+    friendly_name: Theatre Room Light
+    icon: fas:film
+  light.halltoilet_light:
+    friendly_name: Hall Toilet Light
+    icon: fas:toilet
+  light.livingroom_light:
+    friendly_name: Living Room Light
+    icon: fas:piano
+
+

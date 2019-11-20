@@ -1,0 +1,29 @@
+icon: 'fas:cctv'
+path: cameras
+title: Cameras
+panel: false
+
+cards:
+  - type: entities
+    title: 'Camera State'
+    show_header_toggle: false
+    entities:
+      - camera.cats_room
+      - camera.entryway
+      - camera.entryway_2
+      - camera.family_room_2
+      - camera.family_room
+      - camera.office
+  - type: picture-entity
+    entity: camera.cats_room
+  - type: picture-entity
+    entity: camera.entryway
+  - type: picture-entity
+    entity: camera.family_room
+  - type: picture-entity
+    entity: camera.office
+  - type: picture-entity
+    entity: camera.entryway_2
+  - type: picture-entity
+    entity: camera.family_room_2
+

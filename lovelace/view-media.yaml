@@ -1,0 +1,70 @@
+icon: 'fas:tv-retro'
+path: media
+title: Media
+panel: false
+
+cards:
+  - type: 'custom:vertical-stack-in-card'
+    cards:
+      - type: custom:mini-media-player
+        entity: media_player.office_tv
+        icon: fas:tv
+        power_toggle: false
+        hide:
+          controls: true
+          volume: true
+          source: true
+          power_state: false
+      - type: custom:mini-media-player
+        entity: media_player.office
+        icon: fas:speaker
+        hide:
+          power: true
+
+  - type: 'custom:vertical-stack-in-card'
+    cards:
+      - type: custom:mini-media-player
+        entity: media_player.master_bedroom_tv
+        icon: fas:tv
+        hide:
+          controls: true
+          volume: true
+          source: true
+          power_state: false
+      - type: custom:mini-media-player
+        entity: media_player.master_bedroom
+        icon: fas:speaker
+        hide:
+          power: true
+
+  - type: 'custom:vertical-stack-in-card'
+    cards:
+      - type: custom:mini-media-player
+        entity: media_player.family_room_tv
+        icon: fas:tv
+        hide:
+          controls: true
+          volume: true
+          source: true
+          power_state: false
+      - type: custom:mini-media-player
+        entity: media_player.denon_amp
+        icon: fas:speaker
+        hide:
+          power_state: false
+
+  - type: 'custom:vertical-stack-in-card'
+    cards:
+      - type: entities
+        show_header_toggle: false
+        entities: 
+          - entity: switch.theatre_projector
+            icon: fas:projector
+      - type: horizontal-stack
+        cards:
+          - type: light
+            entity: light.theatre_room
+          - type: light
+            entity: light.theatrehall_light
+
+

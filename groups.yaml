@@ -1,0 +1,137 @@
+# People Status
+
+people_status:
+  name: People Status
+  entities:
+    - sensor.mike_status
+    - sensor.debbie_status
+
+# Home Door Status
+
+home_door_status:
+  name: Home Door Status
+  icon: fas:shield-check
+    - sensor.casita_door_status
+    - sensor.front_door_status
+    - sensor.laundry_door_status
+    - sensor.theatre_door_status
+    
+# Casita Window  Status
+
+casita_window_status:
+  name: Casita Windows
+    - sensor.casita_bed_win_status
+    - sensor.casita_bath_win_status
+    - sensor.casita_south_win_status
+    - sensor.casita_living_win_status
+
+# Home Window Status
+
+home_window_status:
+  name: Home Windows
+    - sensor.bed_2_sm_window_status
+    - sensor.bed_2_window_status
+    - sensor.bed_3_window_status
+    - sensor.bed_4_sm_window_status
+    - sensor.bed_4_window_status
+    - sensor.kitchen_window_status
+    - sensor.master_slider_status
+    - sensor.master_bedroom_window_status
+    - sensor.office_window_status
+    - sensor.pool_slider_status
+
+# ZWave Groups
+
+casita:
+  name: Casita
+  entities:
+    - light.casita_inside_entry_light
+    - light.casita_sitting_area
+    - light.casita_wetbar
+    - switch.casita_wall_switch
+cats:
+  name: Cats Room
+  entities:
+    - light.cats_hallway_light
+    - light.cats_room_light
+    - light.cats_toilet_light
+    - switch.cats_toilet_fan
+dining:
+  name: Dining Room
+  entities:
+    - light.butlerpantry_light
+    - light.diningroom_light
+entry:
+  name: Entry
+  entities:
+    - light.entry_light
+    - light.halltoilet_light
+    - light.livingroom_light
+    - switch.halltoilet_fan
+family:
+  name: Family Room
+  entities:
+    - light.familyroom_sofa_light
+    - light.familyroom_tv_light
+    - light.wetbar_light
+    - light.wetbar_sink
+    - light.wineroom_light
+fans:
+  name: Ceiling Fans
+  entities:
+    - switch.casita_fan
+    - switch.cats_room_fan
+    - switch.master_bedroom_fan
+    - switch.moms_room_fan
+    - switch.mom_tv_fan
+fireplaces:
+  name: Fireplaces
+  entities:
+    - switch.casita_fireplace
+kitchen:
+  name: Kitchen
+  entities:
+    - light.breakfastnook_light
+    - switch.kitchenpantry_light
+outdoors:
+  name: Outdoors
+  entities:
+    - light.backporch_light
+    - switch.casita_outside_light
+    - switch.frontdoor_light
+    - switch.yard_light
+    - switch.theatre_outside_light
+courtyard:
+  name: courtyard
+  entities:
+    - switch.casita_outside_light
+    - switch.frontdoor_light
+    - switch.theatre_outside_light
+master_bathroom:
+  name: Master Bathroom
+  entities:
+    - light.masterbathroom_sink_light
+    - light.masterbathroom_tub_light
+    - light.mastertoilet_light
+    - switch.masterbathroom_tub_fan
+    - switch.mastertoilet_fan
+master_bedroom:
+  name: Master Bedroom
+  entities:
+    - light.master_bedroom_bed_light
+    - light.master_bedroom_picture_light
+    - light.masterrotunda_light
+    - switch.mastercloset_light
+mom:
+  name: Mom Suite
+  entities:
+    - light.mom_tv_light
+    - light.moms_room_light
+    - light.moms_sink_light
+    - light.moms_toilet_light
+    - switch.moms_toilet_fan
+theatre:
+  name: Theatre Room
+  entities:
+    - light.theatrehall_light
+    - light.theatre_room

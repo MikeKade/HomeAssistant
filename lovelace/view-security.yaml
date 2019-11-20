@@ -1,0 +1,9 @@
+icon: 'fas:shield-check'
+path: security
+title: Security
+panel: false
+cards:
+  - type: alarm-panel
+    entity: alarm_control_panel.area_001
+  - type: alarm-panel
+    entity: alarm_control_panel.area_002

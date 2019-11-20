@@ -1,0 +1,6 @@
+  sensor.debbie_status:
+    entity_picture: /local/icons/debbie.png
+
+  sensor.mike_status:
+    entity_picture: /local/icons/mike.png
+

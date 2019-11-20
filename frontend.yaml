@@ -1,0 +1,7 @@
+extra_html_url:
+  - /local/icons/hass-fontawesome-solid.html
+  - /local/icons/hass-fontawesome-regular.html
+  - /local/icons/hass-fontawesome-brands.html
+
+themes: !include_dir_named themes/
+
