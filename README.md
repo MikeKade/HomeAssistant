@@ -2,7 +2,7 @@
 
 ### Equipment
 
-#### Hardware
+#### Devices
 
   - SimplyNUC 8th Generation NUC8i7BEH Server
   - Aeotec z-stick
@@ -15,3 +15,6 @@
   - 4 x Sonos AMP
   - Denon AVR-X4300H Amplifier
   
+#### Hardware Images
+
+![UI](images/simplynuc.jpeg)
