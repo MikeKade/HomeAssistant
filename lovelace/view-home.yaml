@@ -164,5 +164,6 @@ cards:
         old_daily_format: false
         time_format: 12
         show_beaufort: false
-      - entity: camera.front_door
-        type: picture-entity
+      - type: picture-entity
+        entity: camera.front_door
+        name: Front Door

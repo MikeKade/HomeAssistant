@@ -9,21 +9,27 @@ cards:
     show_header_toggle: false
     entities:
       - camera.cats_room
+      - camera.casita
       - camera.entryway
-      - camera.entryway_2
-      - camera.family_room_2
       - camera.family_room
+      - camera.kitchen
       - camera.office
   - type: picture-entity
     entity: camera.cats_room
+    name: Cats Room
   - type: picture-entity
-    entity: camera.entryway
+    entity: camera.casita
+    name: Casita
   - type: picture-entity
-    entity: camera.family_room
+    entity: camera.kitchen
+    name: Kitchen
   - type: picture-entity
     entity: camera.office
+    name: Office
   - type: picture-entity
-    entity: camera.entryway_2
+    entity: camera.entryway
+    name: Entryway
   - type: picture-entity
-    entity: camera.family_room_2
+    entity: camera.family_room
+    name: Family Room
 
