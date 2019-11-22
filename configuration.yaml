@@ -26,6 +26,10 @@ sensor: !include sensor.yaml
 
 frontend: !include frontend.yaml
 
+# Switches
+
+switch: !include switch.yaml
+
 # Put lovelace UI into yaml mode
 
 lovelace:
@@ -64,13 +68,6 @@ zeroconf:
 
 ios:
 
-# Sony Projector
-
-switch:
-  - platform: sony_projector
-    host: 192.168.102.74
-    name: "Theatre Projector"
-    
 # Denon
 
 media_player:
@@ -168,6 +165,7 @@ logger:
   default: info
   logs:
     homeassistant.components.denonavr: debug
+    homeassistant.components.http: warning
     
 group: !include groups.yaml
 automation: !include automations.yaml

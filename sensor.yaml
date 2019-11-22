@@ -11,6 +11,15 @@
       - type: load_15m
       - type: last_boot
 
+# Command Line
+
+  - platform: command_line
+    name: acurus_vol
+    command: "echo 'STSVOL' | nc 192.168.102.70 26483"
+    value_template: "{{ value.split('VOL')[1] | int }}"
+    
+# Templates
+
   - platform: template
     sensors:
 

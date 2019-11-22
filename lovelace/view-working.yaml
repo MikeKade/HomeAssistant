@@ -136,23 +136,16 @@ cards:
       - sensor.cats_hallway_thermostat_back_bedroom_target
       - sensor.cats_room_nest_protect_cats_room_battery_health
       - sensor.cats_room_nest_protect_cats_room_color_status
-      - zwave.cats_room_toilet_fan
-      - zwave.cats_room_light
-      - zwave.cats_room_fan
-      - zwave.cats_hallway_light
       - switch.cats_toilet_fan
       - switch.cats_room_fan
       - light.cats_room_light
       - light.cats_hallway_light
-      - zwave.cats_toilet_light
       - light.cats_toilet_light
     show_header_toggle: true
     title: Cats Room
     type: entities
   - entities:
-      - zwave.diningroom_light
       - light.diningroom_light
-      - zwave.butlerpantry_light
       - light.butlerpantry_light
     show_header_toggle: true
     title: Dining Room
@@ -184,9 +177,6 @@ cards:
       - sensor.entryway_nest_protect_front_door_color_status
       - switch.halltoilet_fan
       - light.halltoilet_light
-      - zwave.halltoilet_light
-      - zwave.halltoilet_fan
-      - zwave.halltoilet_sensor
       - sensor.halltoilet_sensor_temperature
       - sensor.halltoilet_sensor_luminance
       - sensor.halltoilet_sensor_relative_humidity
@@ -197,7 +187,6 @@ cards:
       - sensor.halltoilet_sensor_alarm_level
       - binary_sensor.halltoilet_sensor
       - light.entry_light
-      - zwave.entry_light
     show_header_toggle: true
     title: Entryway
     type: entities
@@ -222,47 +211,34 @@ cards:
       - sensor.family_room_nest_protect_color_status
       - sensor.family_room_thermostat_family_room_humidity
       - sensor.family_room_thermostat_family_room_hvac_state
-      - zwave.familyroom_tv_light
-      - zwave.familyroom_sofa_light
       - light.familyroom_tv_light
       - light.familyroom_sofa_light
     show_header_toggle: true
     title: Family Room
     type: entities
   - entities:
-      - zwave.kitchenpantry_light
-      - zwave.breakfastnook_light
       - light.breakfastnook_light
       - switch.kitchenpantry_light
     show_header_toggle: true
     title: Kitchen
     type: entities
   - entities:
-      - zwave.laundryroom_light
-      - zwave.laundryroom_fan
       - switch.laundryroom_light
       - switch.laundryroom_fan
-      - zwave.laundryroom_controller
     show_header_toggle: true
     title: Laundry Room
     type: entities
   - entities:
-      - zwave.livingroom_light
       - light.livingroom_light
     show_header_toggle: true
     title: Living Room
     type: entities
   - entities:
-      - zwave.mastertoilet_light
       - switch.mastertoilet_fan
       - light.mastertoilet_light
-      - zwave.mastertoilet_fan
-      - zwave.masterbathroom_tub_fan
       - switch.masterbathroom_tub_fan
       - light.masterbathroom_sink_light
       - light.masterbathroom_tub_light
-      - zwave.masterbathroom_tub_light
-      - zwave.masterbathroom_sink_light
     show_header_toggle: true
     title: Master Bathroom
     type: entities
@@ -283,12 +259,8 @@ cards:
       - sensor.master_bedroom_nest_protect_smoke_status
       - sensor.master_bedroom_nest_protect_battery_health
       - sensor.master_bedroom_nest_protect_color_status
-      - zwave.masterrotunda_light
       - light.masterrotunda_light
       - switch.master_bedroom_fan
-      - zwave.master_bedroom_fan
-      - zwave.master_bedroom_bed_light
-      - zwave.master_bedroom_picture_light
       - light.master_bedroom_bed_light
       - light.master_bedroom_picture_light
     show_header_toggle: true
@@ -306,11 +278,6 @@ cards:
       - sensor.moms_bedroom_nest_protect_moms_bedroom_color_status
       - binary_sensor.moms_bedroom_nest_protect_moms_bedroom_online
       - sensor.moms_bedroom_nest_protect_moms_bedroom_co_status
-      - zwave.moms_room_fan
-      - zwave.moms_room_light
-      - zwave.moms_toilet_fan
-      - zwave.moms_toilet_light
-      - zwave.moms_sink_light
       - switch.moms_room_fan
       - switch.moms_toilet_fan
       - light.moms_room_light
@@ -326,8 +293,6 @@ cards:
       - sensor.moms_tv_nest_protect_moms_tv_color_status
       - sensor.moms_tv_nest_protect_moms_tv_co_status
       - switch.mom_tv_fan
-      - zwave.mom_tv_fan
-      - zwave.mom_tv_light
       - light.mom_tv_light
     show_header_toggle: true
     title: Mom TV
@@ -344,8 +309,6 @@ cards:
       - sensor.office_nest_protect_color_status
       - switch.office_light
       - switch.office_outlet
-      - zwave.office_light
-      - zwave.office_outlet
     show_header_toggle: true
     title: Office
     type: entities
@@ -355,9 +318,8 @@ cards:
       - binary_sensor.front_door_camera_sound_detected
       - binary_sensor.front_door_camera_person_detected
       - switch.frontdoor_light
-      - zwave.frontdoor_light
-      - zwave.backporch_light
-      - light.backporch_light
+      - switch.casita_outside_light
+      - switch.theatre_outside_light
     show_header_toggle: true
     title: Outdoors
     type: entities
@@ -370,10 +332,7 @@ cards:
       - sensor.rbr50_gateway_packets_sent
       - sensor.rbr50_gateway_kbyte_sec_received
       - sensor.rbr50_gateway_packets_received
-      - zwave.aeon_labs_zw090_z_stick_gen5_us
-      - zwave.serverroom_light
       - switch.serverroom_light
-      - zwave.office_sensor
       - sensor.officesensor_temperature
       - sensor.officesensor_ultraviolet
       - sensor.officesensor_sourcenodeid
@@ -387,16 +346,13 @@ cards:
     title: Server Room
     type: entities
   - entities:
-      - zwave.theatrehall_light
       - light.theatrehall_light
-      - zwave.theatrehall_sensor
       - sensor.theatrehall_temperature
       - sensor.theatrehall_luminance
       - sensor.theatrehall_burglar
       - sensor.theatrehall_sourcenodeid
       - sensor.theatrehall_alarm_type
       - sensor.theatrehall_alarm_level
-      - zwave.theatreroom_powerstrip
       - switch.theatreroom_powerstrip_1
       - switch.theatreroom_powerstrip_2
       - switch.theatreroom_powerstrip_3
@@ -427,8 +383,6 @@ cards:
     title: Theatre Room
     type: entities
   - entities:
-      - zwave.wetbar_light
-      - zwave.wetbar_sink
       - light.wetbar_light
       - light.wetbar_sink
     show_header_toggle: true
@@ -443,8 +397,6 @@ cards:
       - sensor.wineroom_sensor_alarm_level
       - sensor.wineroom_sensor_sourcenodeid
       - sensor.wineroom_sensor_burglar
-      - zwave.wineroom_sensor
-      - zwave.wineroom_light
       - light.wineroom_light
       - binary_sensor.wineroom_sensor
     show_header_toggle: true
@@ -454,5 +406,4 @@ cards:
       - automation.start_homekit
     title: Automation
     type: entities
-  - entity: media_player.denon_amp
-    type: media-control
+

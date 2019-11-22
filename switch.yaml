@@ -1,0 +1,16 @@
+# Sony Projector
+
+  - platform: sony_projector
+    host: 192.168.102.74
+    name: "Theatre Projector"
+
+# Turn Acurus on or off
+
+  - platform: command_line
+    switches:
+      acurus:
+        friendly_name: Acurus AMP
+        command_on: "echo 'PWRONN' | nc 192.168.102.70 26483"
+        command_off: "echo 'PWROFF' | nc 192.168.102.70 26483"
+        command_state: "echo 'STSPOW' | nc 192.168.102.70 26483"
+        value_template: "{{ value.split(' ')[2] == 'ON' }}"
