@@ -133,3 +133,13 @@
             input_select.debbie_status_dropdown
           {% endif %}
         option: Extended Away
+  
+- alias: 'System - Set Custom Theme at Startup'
+  initial_state: 'true'
+  trigger:
+    platform: homeassistant
+    event: start
+  action:
+    service: frontend.set_theme
+    data:
+      name: slate

@@ -3,5 +3,7 @@ extra_html_url:
   - /local/icons/hass-fontawesome-regular.html
   - /local/icons/hass-fontawesome-brands.html
 
-themes: !include_dir_named themes/
+themes: !include_dir_merge_named themes/
+
+# background: var(--lovelace-background)
 

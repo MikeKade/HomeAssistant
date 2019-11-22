@@ -11,6 +11,7 @@ resources:
     type: module
     
 title: Kade Home
+theme: dark-red
 views:
   - !include lovelace/view-home.yaml
   - !include lovelace/view-media.yaml
