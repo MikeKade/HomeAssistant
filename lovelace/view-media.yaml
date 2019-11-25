@@ -60,6 +60,8 @@ cards:
         entities: 
           - entity: switch.theatre_projector
             icon: fas:projector
+          - entity: switch.acurus
+            icon: fas:speakers
       - type: horizontal-stack
         cards:
           - type: light

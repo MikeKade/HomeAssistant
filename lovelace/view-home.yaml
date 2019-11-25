@@ -165,5 +165,7 @@ cards:
         time_format: 12
         show_beaufort: false
       - type: picture-entity
+        title: Front Door
         entity: camera.front_door
-        name: Front Door
+        camera-view: live
+        

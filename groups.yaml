@@ -49,6 +49,9 @@ casita:
     - light.casita_sitting_area
     - light.casita_wetbar
     - switch.casita_wall_switch
+    - switch.casita_closet_light
+    - switch.casita_bath_fan
+    - light.casita_bath_light
 cats:
   name: Cats Room
   entities:
@@ -115,6 +118,9 @@ master_bathroom:
     - light.mastertoilet_light
     - switch.masterbathroom_tub_fan
     - switch.mastertoilet_fan
+    - switch.mbath_shower_fan
+    - light.mbath_pantry_light
+    - light.mbath_shower_light
 master_bedroom:
   name: Master Bedroom
   entities:
